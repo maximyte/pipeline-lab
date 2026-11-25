@@ -32,4 +32,4 @@ jobs:
       - name: Build image
         run: |
           docker build --build-arg APP_VERSION=${{ github.sha }} \
-            -t ghcr.io/<ВПИШИТЕ логин>/pipeline-lab:${{ github.sha }} app
+            -t ghcr.io/maximyte/pipeline-lab:${{ github.sha }} app
