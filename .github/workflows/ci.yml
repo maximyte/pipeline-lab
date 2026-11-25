@@ -36,6 +36,6 @@ jobs:
       - name: Scan image with Trivy
         uses: aquasecurity/trivy-action@v0.36.0
         with:
-          image-ref: ghcr.io/<ВПИШИТЕ логин>/pipeline-lab:${{ github.sha }}
+          image-ref: ghcr.io/maximyte/pipeline-lab:${{ github.sha }}
           severity: CRITICAL
           exit-code: "1"
